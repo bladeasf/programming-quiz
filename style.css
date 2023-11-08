@@ -1,0 +1,101 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.quiz,
+.scores{
+    margin: 50px auto 0 auto;
+    max-width: 400px;
+}
+
+#top{
+    color: rgb(128, 35, 35);
+}
+
+.quizcontainer{
+    border: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 580px;
+    width: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+}
+
+p{
+    margin: 15px 15px;
+}
+
+.start-page{
+    text-align: center;
+}
+
+.header-highscore{
+    position: absolute;
+    top: -50px;
+    left: 15px;
+}
+
+.timer{
+    position: absolute;
+    top: -50px;
+    right: 15px;
+}
+
+button{
+    display:inline-block;
+    margin: 10px;
+    color: rgb(184, 129, 129);
+    border-radius: 5px;
+    border: 0;
+    padding: 20px;
+}
+
+.choices button{
+    display: block;
+}
+
+input [type="text"] {
+    font-size: 100%;
+}
+
+.hide{
+    display: none;
+}
+
+.feedback{
+    font-size: 120%;
+    font-weight: 800;
+    margin-top: 20px;
+    padding-top: 15px;
+    color:rgb(184, 129, 129);
+}
+
+ol{
+    padding-left: 15px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+li{
+    padding: 5px;
+    list-style: decimal;
+}
+
+@media screen and (max-width: 768px) {
+    .quizcontainer{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .quizcontainer{
+        width: 90%;
+    }
+}
+
+.quiz,
+.scores{
+    max-width: 90%;
+}
