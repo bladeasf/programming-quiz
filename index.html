@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <div class="quizcontainer">
+        <header>
+            <div>
+                <a href="./highscore.html">
+                    <button class="header-highscore" id="view-high-scores">
+                        View High Scores
+                    </button>
+                </a>
+            </div>
+            <div class="timer">
+                <p> Time remaining: <span id="timer"> 0 </span>  </p>
+            </div>
+        </header>
+        <main class="quiz">
+            <div id="start-quiz">
+                <div class="start-page" id="start-screen">
+                    <h1 id="top">Coding Quiz</h1>
+                    <p>
+                        Please carefully evaluate the following questions and answer
+                        to the best of your knowledge. Remember that this quiz is multiple choice and timed.
+                        Once one of the questions are answered incorrectly, your timer will be deducted
+                        10 seconds. Good luck!
+                    </p>
+                    <button id="start"> Start Quiz </button>
+                </div>
+            </div>
+
+            <div class="hide" id="questions">
+                <h2 id="sentence"></h2>
+                <div class="choices" id="choices"></div>
+            </div>
+            <div class="hide" id="end-quiz">
+                <h2>Great Job!</h2>
+                <p>You Scored:
+                    <span id="final-score"></span>
+                </p>
+                <p>
+                    Enter you name here:
+                    <input type="text" id="names" max="3"/>
+                    <button id="submit-score">Submit</button>
+                </p>
+            </div>
+            <div id="feedback" class="hide-feedback"></div>
+
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
